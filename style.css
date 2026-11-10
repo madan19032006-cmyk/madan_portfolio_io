@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f5;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background: #123d2a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #55df91;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #55df91;
+}
+
+/* Hero section */
+
+.hero {
+    min-height: 480px;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h3 {
+    color: #16834a;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+    color: #16834a;
+}
+
+.hero-text h2 {
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.profile img {
+    width: 260px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 6px solid white;
+    box-shadow: 0 5px 20px #0002;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background: #16834a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background: #105d34;
+}
+
+/* Sections */
+
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h1 {
+    color: #123d2a;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.card,
+.project-card {
+    background: white;
+    padding: 30px;
+    max-width: 750px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #0001;
+    text-align: left;
+    line-height: 2;
+}
+
+.project-card h2 {
+    color: #16834a;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    background: #123d2a;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .profile img {
+        width: 210px;
+        height: 220px;
+    }
+}
